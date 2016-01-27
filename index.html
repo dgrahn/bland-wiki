@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="utf-8">
+  <title>Bland Wikipedia</title>
+  <meta name="description" content="Simple tool to extract plain-text and remove formatting from Wikipedia.">
+  <meta name="author" content="Daniel Grahn">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href="http://fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="icon" type="image/png" href="images/favicon.png">
+
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
+
+</head>
+<body>
+
+<div class="container">
+  <div class="row">
+    <div class="column top-padding">
+
+      <h4>Bland Wikipedia</h4>
+      <p>Sometimes Wikipedia has too much extra formatting. For those times
+        when you really just need plain-text, you can use this tool. Enter the
+        title of the page into the field below to strip it all out.</p>
+
+      <form>
+        <input type="text" name="title" value="The Daily Show"/>
+        <input type="submit" value="Bland"/>
+      </form>
+    </div>
+  </div>
+
+  <div class="row">
+    <p><a href="#" id="download" class="hide">Download</a></p>
+  </div>
+
+  <div class="row" id="article">
+      <!-- Retrieved article goes here. -->
+  </div>
+</div>
+
+</body>
+</html>
